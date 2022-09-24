@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Ejercicio 4
  * dadas dos listas de palabras, retorne una unica lista en la cual se encuentren las palabras
@@ -7,12 +8,8 @@
  * ejem:
  * ["rat", "dog", "cat", "parrot", "cat"] y ["cat", "lizard", "rat", "cat"] devolverán ["cat", "rat"]
  */
-
- function Funcion4(WordA:string[], WordB:string[]) {
-  
+function Funcion4(WordA, WordB) {
     const list = WordA.filter(element => WordB.includes(element));
     return list;
-  }
-  
-  module.exports = Funcion4;
-  
+}
+module.exports = Funcion4;

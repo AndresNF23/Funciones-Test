@@ -1,12 +1,12 @@
-const wordsrepeated = require ('./funcion4');
+const ejercicio4 = require ('./funcion4');
 
-test('RW', ()=>{
+test('verificar', ()=>{
 
-    const arraywordA: string[] = ['laptop', 'mouse', 'teclado', 'pantalla'];
-    const arraywordB: string[] = ['teclado', 'microfono', 'mouse', 'audifonos'];
+    const WordA: string[] = ['laptop', 'teclado', 'mouse', 'pantalla'];
+    const WordB: string[] = ['teclado', 'microfono', 'mouse', 'audifonos'];
     
     const listWords: string[] = ['teclado', 'mouse'];
 
 
-    expect(wordsrepeated(arraywordA, arraywordB)).toEqual(listWords);
+    expect(ejercicio4(WordA, WordB)).toEqual(listWords);
 });
